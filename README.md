@@ -41,6 +41,12 @@ Görselleştirme, şarapların üç farklı gruba başarıyla ayrıldığını a
 ![Temel Bileşen Analizi (PCA)](Figure_3.png)
 
 ### 🎯 Sonuçlar
-Projenin sonunda, her bir kümenin ortalama özellik değerleri incelenerek her kümenin karakteristiği belirlenmiştir. Bu analiz, her bir kümenin hangi kimyasal özellikler açısından diğerlerinden ayrıldığını anlamamıza yardımcı olmuştur. Örneğin, bir kümedeki şarapların alkol ve `Proline` değerlerinin yüksek olduğu gözlemlenirken, başka bir kümedekilerin `Flavanoids` değerlerinin yüksek olduğu görülebilir.
+Projenin sonunda, her bir kümenin ortalama özellik değerleri incelenerek her kümenin kendine özgü karakteristiği belirlenmiştir. Bu analiz, kümeleme işleminin yalnızca veri noktalarını gruplamakla kalmayıp, aynı zamanda her bir grubun temel özelliklerini ortaya çıkardığını göstermektedir.
 
-Bu çalışma, gözetimsiz öğrenme (unsupervised learning) tekniklerinin veri setindeki gizli yapıları keşfetmek için ne kadar güçlü araçlar olduğunu ortaya koymaktadır.
+Küme 0: Bu kümedeki şaraplar, özellikle yüksek Alcohol, Proline ve Color_Intensity değerleriyle öne çıkmaktadır. Bu özellikler, bu kümedeki şarapların muhtemelen daha güçlü ve yoğun bir profile sahip olduğunu göstermektedir.
+
+Küme 1: Bu gruptaki şaraplar, yüksek Flavanoids, Total_Phenols ve OD280/OD315_of_diluted_wines değerlerine sahiptir. Bu kimyasallar, genellikle kırmızı şaraplarda bulunan tanen ve renk pigmentleri ile ilişkilidir ve bu şarapların daha zengin ve karmaşık bir yapıya sahip olduğunu işaret eder.
+
+Küme 2: Bu küme, diğer gruplara göre daha düşük Flavanoids ve Total_Phenols değerleri sergilerken, Malic_Acid ve Ash_Alcanity değerlerinin daha yüksek olduğu gözlemlenmiştir. Bu profil, genellikle beyaz şarapların karakteristik özelliklerine daha yakındır.
+
+Bu çalışma, gözetimsiz öğrenme (unsupervised learning) tekniklerinin veri setindeki gizli yapıları keşfetmek ve bu yapıları anlamlı gruplara ayırmak için ne kadar güçlü araçlar olduğunu ortaya koymaktadır. Küme ortalamalarını inceleyerek, her bir kümenin ne tür bir şarabı temsil ettiğine dair değerli içgörüler elde edilmiştir.
